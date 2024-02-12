@@ -6,3 +6,6 @@ Korišten je skup slika OpenImagesv7, iz kojeg je pomoću FiftyOne preuzet manji
 Dobiveni model nastao je dotreniranjem modela YOLOv8n.pt, pri čemu su korišteni hiperparametri: batch size 16 i 32, 10 epoha, patience 2, learning rate 0.01. Ovako razvijeni model pri validaciji postiže ukupnu preciznost mAP50 od 82%, mAP50-95 64%, box precision 66% i recall 85%. 
 ![Treniranje modela](https://github.com/ivonagrbesa/object-detection-model/blob/main/results.png)
 ![Matrica konfuzije](https://github.com/ivonagrbesa/object-detection-model/blob/main/confusion_matrix_normalized.png)
+
+Model uspješno detektira većinu traženih objekata na slici i sigurnost (confidence) ima uglavnom visoke vrijednosti. 
+![Detekcija objekata]
