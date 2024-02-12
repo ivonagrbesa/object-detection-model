@@ -20,3 +20,5 @@ from DetectObjects import *
 p = ['C:/Users/Ivona/Desktop/Codeasy/yolo_test_dataset/10abae5a94fe5368.jpg']
 Detect(p)
 ```
+Output dobiven pokretanjem modela prikazan je u nastavku.
+![Output pokretanja modela](https://github.com/ivonagrbesa/object-detection-model/blob/main/DetectionOutput.PNG)
