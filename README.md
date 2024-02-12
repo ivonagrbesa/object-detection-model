@@ -11,5 +11,23 @@ Model uspješno detektira većinu traženih objekata na slici i sigurnost (confi
 
 Provedeno je i treniranje YOLOv8s.pt modela, kojim su dobiveni slični rezultati, ali s većom pristranošću između klasa (u korist klase sova) i lošijom izvedbom na skupu za testiranje pa je prvotni model izabran kao finalni.
 
-# Pokretanje
-Izabrani model spremljen je u 
+# Upute za pokretanje modela
+Izabrani model spremljen je u (https://github.com/ivonagrbesa/object-detection-model/blob/main/runs/detect/train20/weights/best.pt), a pokreće se unutar datoteke detection.py. 
+
+'''
+
+image_paths=['C:/Users/Ivona/Desktop/Codeasy/yolo_test_dataset/10abae5a94fe5368.jpg']
+
+def Detect(paths):
+    model = YOLO('C:/Users/Ivona/Desktop/Codeasy/runs/detect/train20/weights/best.pt')
+    for p in image_paths:
+        results = model(p, conf=0.2, imgsz=640, show=True, show_labels=True, show_conf=True, show_boxes=True)
+
+        for r in results:
+            im_array = r.plot()         
+            plt.imshow(im_array[..., ::-1])
+            plt.axis('off')
+            plt.tight_layout(pad=0)
+            plt.show()
+
+'''
