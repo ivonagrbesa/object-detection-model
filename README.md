@@ -8,3 +8,8 @@ Dobiveni model nastao je dotreniranjem modela YOLOv8n.pt, pri čemu su korišten
 
 Model uspješno detektira većinu traženih objekata na slici i sigurnost (confidence) ima uglavnom visoke vrijednosti. 
 ![Detekcija objekata](https://github.com/ivonagrbesa/object-detection-model/blob/main/results.jpg)
+
+Provedeno je i treniranje YOLOv8s.pt modela, kojim su dobiveni slični rezultati, ali s većom pristranošću između klasa (u korist klase sova) i lošijom izvedbom na skupu za testiranje pa je prvotni model izabran kao finalni.
+
+# Pokretanje
+Izabrani model spremljen je u 
