@@ -1,0 +1,8 @@
+path: C:/Users/Ivona/Desktop/Codeasy
+train: yolo_train_dataset
+val: yolo_val_dataset
+
+#Classes
+names: 
+  0 : Sheep
+  1 : Owl
