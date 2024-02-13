@@ -12,7 +12,7 @@ Model uspješno detektira većinu traženih objekata na slici i sigurnost (confi
 Provedeno je i treniranje YOLOv8s.pt modela, kojim su dobiveni slični rezultati, ali s većom pristranošću između klasa (u korist klase sova) i lošijom izvedbom na skupu za testiranje pa je prvotni model izabran kao finalni.
 
 # Upute za pokretanje modela
-Izabrani model spremljen je u (https://github.com/ivonagrbesa/object-detection-model/blob/main/runs/detect/train20/weights/best.pt), a pokreće se unutar datoteke detection.py. Prije pokretanja potrebno je postaviti da datoteka detection.py bude u istom direktoriju kao datoteka DetectObjects.py, a u tim fileovima putanje do datoteka i modela prilagoditi direktorijima računala na kojem se pokreće. Funkcija Detect kao ulazni parametar prima niz putanja za jednu ili više slika iz skupa za testiranje. Funkcija Detect učitava model, provodi interferenciju te ispisuje koliko je i kojih objekata detektirano, otvara se unesena slika s uokvirenim detektiranim objektima i pouzdanošću.
+Izabrani model spremljen je u (https://github.com/ivonagrbesa/object-detection-model/blob/main/runs/detect/train20/weights/best.pt), a pokreće se unutar datoteke detection.py. Prije pokretanja potrebno je postaviti da datoteka detection.py bude u istom direktoriju kao datoteka DetectObjects.py, a u tim fileovima putanje do slika i modela treba prilagoditi direktorijima računala na kojem se pokreće. Funkcija Detect kao ulazni parametar prima niz putanja za jednu ili više slika iz skupa za testiranje. Funkcija Detect učitava model, provodi interferenciju te ispisuje koliko je i kojih objekata detektirano, otvara se unesena slika s uokvirenim detektiranim objektima i pouzdanošću.
 
 ```
 from DetectObjects import *
